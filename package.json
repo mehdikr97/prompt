@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node calcula.js"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
