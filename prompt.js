@@ -1,6 +1,14 @@
 
 const prompt = require('prompt-sync')();
 
+function factoriel(n) {
+    if (n == 0 || n == 1) {
+        return 1; // Le factoriel de 0 ou 1 est 1
+    } else {
+        return n * factoriel(n - 1); 
+    }
+}
+
 for (let i = 0; i < 900; i++) {
     const operateur = prompt("Entrez un opérateur (+, -, *, /, ^, <,!) : ");
     
